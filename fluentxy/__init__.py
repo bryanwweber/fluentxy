@@ -6,7 +6,7 @@ import pandas as pd
 
 from typing import List
 
-__version__ = "0.1.0.dev0"
+__version__ = "0.1.0"
 
 
 def parse_data(lines: List) -> pd.DataFrame:
