@@ -39,3 +39,8 @@ def parse_data(lines: List) -> pd.DataFrame:
             finish = False
             this_data = []
     return data
+
+
+def plot_xy(axis, df, column, x_label, y_label):
+    """Plot an X-Y line plot from the given column in the df on axis."""
+    axis.plot(df[(column, x_label)], df[(column, y_label)])
